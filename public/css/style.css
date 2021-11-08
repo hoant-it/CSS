@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+}
+
+
+.container{
+  display: flex;
+  background-color: #DDD;
+  color: #FFFF;
+  flex-direction: row;
+}
+
+.child1{
+  background-color: red;
+  flex-basis: 150px;
+  /* flex-basis => giãn khoảng cách giữa các div
+  sai khi content bên trong quá lớn
+  sai khi div cha có kích thước nhỏ hơn tổng kích thước của div con; */
+  /* flex-grow: 1; */
+  /* flex-grow => lấy diện tích còn thừa của div cha và chia đều theo số phần
+ cho các con */
+ flex-shrink: 0;
+ /* flex-shrink => dam bao div hien tai giu nguyen width, cac div con lai chia theo ct */
+ order: 1;
+ /* order => đảo vị trí div con trong div cha */
+}
+
+.child2{
+  background-color: green;
+  flex-basis: 200px;
+ 
+}
+
+.child3{
+  background-color: blue;
+  flex-basis: 150px;
+
+}
