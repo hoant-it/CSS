@@ -1,0 +1,18 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+  display: flex;
+}
+
+.child1{
+  /* color: yellow; */
+  background-color: yellow;
+}
+.child2{
+  background-color: green;
+}
+.child3{
+  background-color: red;
+}
