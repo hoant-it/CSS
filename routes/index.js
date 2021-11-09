@@ -10,4 +10,9 @@ router.get('/absolute', function(req, res, next) {
   res.render('absolute', { title: 'Express' });
 });
 
+
+router.get('/dropdown', function(req, res, next) {
+  res.render('dropdown', { title: 'Express' });
+});
+
 module.exports = router;
