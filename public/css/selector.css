@@ -1,0 +1,9 @@
+a[target]{
+    color: red;
+}
+
+input[type="text"]{
+    margin-top: 10px;
+    display: block;
+    border: 1px solid red;
+}
