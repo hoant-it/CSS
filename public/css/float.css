@@ -1,4 +1,38 @@
+/* .menu{
+    background-color: #EEE;
+}
+
+
 .menu li{
     float: left;
     list-style: none;
+    background-color: rgb(211, 201, 201);
+}
+
+p{
+    clear: left;
+    su dung khi co float de clear float
+} */
+
+.header{
+    height: 100px;
+}
+.sidebar{
+    float: left;
+    width: 300px;
+}
+
+.main{
+    margin-right: 20px;
+}
+
+.wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 80%;
+}
+
+.footer{
+    height: 100px;
 }
