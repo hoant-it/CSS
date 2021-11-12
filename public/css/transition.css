@@ -1,0 +1,31 @@
+.album-item {
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/1200px-Image_created_with_a_mobile_phone.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.album-item .overplay{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.album-item .overplay img{
+    transform: scale(0.8);
+    transition: all 0.3s;
+    height: 30px;
+    width: 30px;
+}
+
+.album-item:hover .overplay {
+    opacity: 1;
+}
+
+.album-item:hover .overplay img{
+    transform: scale(1);
+}

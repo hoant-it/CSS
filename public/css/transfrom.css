@@ -4,3 +4,8 @@
     background-color: gray;
 }
 
+img{
+    width: 10px;
+    height: 10px;
+    background-image: none;
+}
