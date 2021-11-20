@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/wowjsanimation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+<body>
+    <div class="list-items">
+        <div class="item "></div>
+        <div class="item "></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="list-items">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="list-items">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        
+    </div>
+    <div class="list-items">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="list-items">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+<script>
+    var listItems= document.querySelectorAll('.item');
+    var arrColor=["black","red","bue","pink","gray","brown","pink","violet","green"];
+    var arrAnimation=["animate__flash","animate__bounce","animate__pulse",
+    "animate__rubberBand",
+    "animate__backInDown","animate__backInLeft",
+]
+
+    listItems.forEach(function(i){
+        i.classList.add("animate__animated",""+arrAnimation[Math.floor(Math.random()*arrAnimation.length)]+"");
+        // animate__repeat-3
+        // "animate__delay-2s"
+        // i.style.setProperty('--animate-duration', '5s');
+        i.style.setProperty('--animate-delay', '5s');
+        i.style.background= "linear-gradient("+arrColor[Math.floor(Math.random()*arrColor.length)]+","+arrColor[Math.floor(Math.random()*8)]+")";
+
+    });
+    
+</script>    
+</body>
+</html>
