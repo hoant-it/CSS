@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/userdropdown.css">
+</head>
+<body>
+    <div class="action">
+        <div class="profile" id="profileId">
+            <img src="/images/Wacoal_images.png" alt="">
+        </div>
+        <div class="menu" id="menuProfileId">
+            <h3>someone Famous <br> <span>Website Designer</span></h3>
+            <ul>
+                <li><img src="/images/Wacoal_images.png" alt=""><a href="#">My Profile</a></li>
+                <li><img src="/images/Wacoal_images.png" alt=""><a href="#">Edit</a></li>
+                <li><img src="/images/Wacoal_images.png" alt=""><a href="#">Inbox</a></li>
+                <li><img src="/images/Wacoal_images.png" alt=""><a href="#">Setting</a></li>
+                <li><img src="/images/Wacoal_images.png" alt=""><a href="#">Help</a></li>
+                <li><img src="/images/Wacoal_images.png" alt=""><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+<script>
+    function menuToggle(){
+        const toggleMenu= document.getElementById("menuProfileId");
+        toggleMenu.classList.toggle('active')
+    }
+    var profileId=document.getElementById("profileId");
+    profileId.addEventListener('click',menuToggle);
+</script>    
+</body>
+</html>
