@@ -28,6 +28,12 @@ router.get('/uploadprocessbar', function(req, res, next) {
   res.render('uploadprocessbar', { title: 'Express' });
 });
 
+router.get('/infinitescroll', function (req, res){
+  res.render('infinitescroll',{ title: "infinite scroll"
+
+  })
+})
+
 
 router.post('/uploadprocessbar', async (req, res) =>{
 
