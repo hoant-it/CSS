@@ -3,36 +3,10 @@ var router = express.Router();
 var multer= require('multer'); // for handling mutipart form data/images/files
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('youtubeclone', { title: 'Express' });
-});
-
-router.get('/checklist', function(req, res, next) {
-  res.render('checklist', { title: 'Express' });
-});
-
-router.get('/dropdown', function(req, res, next) {
-  res.render('dropdown', { title: 'Express' });
-});
-
-router.get('/userdropdown', function(req, res, next) {
-  res.render('userdropdown', { title: 'Express' });
+  res.render('youtube/youtubev2');
 });
 
 
-router.get('/searchyoutube', function(req, res, next) {
-  res.render('searchyoutube', { title: 'Express' });
-});
-
-
-router.get('/uploadprocessbar', function(req, res, next) {
-  res.render('uploadprocessbar', { title: 'Express' });
-});
-
-router.get('/infinitescroll', function (req, res){
-  res.render('infinitescroll',{ title: "infinite scroll"
-
-  })
-})
 
 
 router.post('/uploadprocessbar', async (req, res) =>{
