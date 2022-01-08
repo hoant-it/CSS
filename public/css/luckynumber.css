@@ -37,3 +37,22 @@ body{
 .label-number{
     font-size: 5rem;
 }
+
+
+.tbl-Pt{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tbl-Pt td, th {
+    border:  1px solid #dddddd;
+    text-align: left;
+}
+.tbl-Pt tr:nth-child(1) {
+    background-color: yellow
+}
+
+.tbl-Pt tr:nth-child(even) {
+    background-color: #dddddd;
+}
+

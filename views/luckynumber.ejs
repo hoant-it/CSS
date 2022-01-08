@@ -11,12 +11,27 @@
 </head>
 
 <body>
-    <h3>Chương Trình Quay SỐ May Mắn</h3>
+    <h3>Chương Trình Quay Số May Mắn</h3>
 
-    <!-- "> -->
+ 
     <div class="container">
         <div class="row">
-            <div class="col-4"></div>
+            <div class="col-4" id="divPt">
+                <table  class="tbl-Pt">
+                    <tr>
+                        <th> STT </th>
+                        <th> Phần Thường </th>
+                        <th> Đơn Vị </th> 
+                        <th> Số Lượng </th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td> May Lanh</td>
+                        <td> PCS</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </div>
             <div class="col-4">
                 <div class="container-lucky">
                     <div class="number">
@@ -24,7 +39,7 @@
 
                     </div>
                     <label for="" id="lblArlet"></label>
-                    <button id="btnStart" class="btn-start">Start</button>
+                    <button class="btn btn-primary" type="button"  id="btnStart">Quay</button>
                 </div>
 
             </div>
@@ -32,11 +47,6 @@
         </div>
     </div>
 
-
-
-
-
-    <!--  -->
 
 </body>
 <script src="/javascripts/luckynumber.js"></script>
