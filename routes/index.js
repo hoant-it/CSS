@@ -3,7 +3,7 @@ var router = express.Router();
 var multer= require('multer'); // for handling mutipart form data/images/files
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('rightclickmenu');
+  res.render('socketio');
 });
 
 
