@@ -19,5 +19,11 @@ window.onload = function () {
         toggle();
         
     })
+
+    const loader = document.querySelector('.loader');
+    loader.classList.add('hidden');
+
     
 }
+
+
